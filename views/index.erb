@@ -1,0 +1,61 @@
+<html>
+<head>
+  <style>
+  body {
+    background-image: url("http://data2.whicdn.com/images/129413788/large.jpg");
+  }
+ <link rel= "stylesheet" type="text/css" href="http://data2.whicdn.com/images/119705956/large.gif"> 
+
+h1 {
+  color: #FFFFFF;
+}
+
+.box {
+  width: 300px;
+  height: auto;
+  background-color: gray;
+  border: #ccc solid 12px;
+  position: absolute;
+}
+
+.box2 {
+  width: 500px;
+  height: auto;
+  float: right;
+  background-color: gray;
+  border: #ccc solid 12px;
+}
+
+p {
+  color: rgb(255,255,255); 
+}
+
+h1 {font-family: 'Metrophobic', Arial, serif; font-weight:400;}
+
+img {
+  opacity: 0.4;
+  filter: alpha (opacity=40); 
+  img:hover;
+}
+</style>
+<div class="box">
+<h1>LANA DEL REY</h1>
+<% @object.last_tweets.each do |tweet|%>
+<br> 
+<%= tweet%><br><br>
+<%end %>
+</div>
+
+<div class="box2">
+  <img src="http://data2.whicdn.com/images/119705956/large.gif">
+    <br>
+    <img src="http://data2.whicdn.com/images/125329262/large.gif">
+<br>
+    <img src="http://data1.whicdn.com/images/130487023/large.gif">
+    <br>
+    <img src="http://data3.whicdn.com/images/129027679/large.gif"
+
+  </div>
+<br>
+  
+</html>
